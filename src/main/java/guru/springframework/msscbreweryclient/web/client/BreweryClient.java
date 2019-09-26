@@ -8,9 +8,6 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.UUID;
 
-/**
- * Created by jt on 2019-04-23.
- */
 @ConfigurationProperties(prefix = "sfg.brewery", ignoreUnknownFields = false)
 @Component
 public class BreweryClient {
@@ -28,7 +25,7 @@ public class BreweryClient {
         return restTemplate.getForObject(apihost + BEER_PATH_V1 + uuid.toString(), BeerDto.class);
     }
 
-    public void setApihost(String apihost) {
+    public void setApihost(String apihost) { // need setter to binder class member with source property
         this.apihost = apihost;
     }
 }

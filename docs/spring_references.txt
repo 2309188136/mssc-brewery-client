@@ -1,0 +1,2 @@
+----Generating Your Own Metadata by Using the Annotation Processor
+https://docs.spring.io/spring-boot/docs/2.1.7.RELEASE/reference/html/configuration-metadata.html#configuration-metadata-annotation-processor
