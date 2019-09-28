@@ -9,7 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.net.URI;
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @SpringBootTest
 class BreweryClientTest {
@@ -20,7 +20,9 @@ class BreweryClientTest {
     @Test
     void getBeerById() {
         BeerDto dto = client.getBeerById(UUID.randomUUID());
+
         assertNotNull(dto);
+
     }
 
     @Test
